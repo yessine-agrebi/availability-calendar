@@ -30,5 +30,3 @@ export const CalendarHead: React.FC<CalendarHeadProps> = ({
     </Fragment>
   );
 };
-
-

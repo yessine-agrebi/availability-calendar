@@ -1,13 +1,9 @@
 import React from "react";
 
 type DayHeaderProps = {
-    day: string;
+  day: string;
 };
 
-export const DayHeader: React.FC<DayHeaderProps> = ({day}) => {
-  return (
-    <div className="p-2 text-center ">
-      {day}
-    </div>
-  );
+export const DayHeader: React.FC<DayHeaderProps> = ({ day }) => {
+  return <div className="p-2 text-center ">{day}</div>;
 };
