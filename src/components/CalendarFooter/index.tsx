@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
-type Props = {}
+type CalendarFooterProps = {
+    children: React.ReactNode
+}
 
-const CalendarFooter = (props: Props) => {
+export const CalendarFooter: React.FC<CalendarFooterProps> = ({children}) => {
   return (
-    <div>CalendarFooter</div>
+    <Fragment>
+        {children}
+    </Fragment>
   )
 }
