@@ -14,14 +14,14 @@ export const CalendarHead: React.FC<CalendarHeadProps> = ({
   return (
     <Fragment>
       <div className="grid grid-cols-7 border-b-2 border-blue-500">
-        {daysOfWeek.map((day, index) => (
+        {daysOfWeek?.map((day, index) => (
           <div key={index} className="day-header">
             {children}
           </div>
         ))}
       </div>
       <div className="grid grid-cols-7 border-b-2 border-blue-500">
-        {daysOfMonth.map((day, index) => (
+        {daysOfMonth?.map((day, index) => (
           <div key={index} className="p-2 text-center">
             <div className="text-gray-400">{day.getDate()}</div>
           </div>

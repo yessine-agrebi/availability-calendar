@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Calendar } from ".";
-import { CalendarHead, DayHeader } from "..";
+import { CalendarHead } from ".";
+import { DayHeader } from "..";
 
-const meta: Meta<typeof Calendar> = {
-  title: "components/Calendar",
-  component: Calendar,
+const meta: Meta<typeof CalendarHead> = {
+  title: "components/CalendarHead",
+  component: CalendarHead,
   parameters: {
     layout: "centered",
   },
@@ -18,8 +18,7 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     //React node to render in the Calendar component
-    children: <CalendarHead daysOfWeek={['Monday', 'Tuesday']} daysOfMonth={[new Date(), new Date()]} children={''} />,
+    children: DayHeader({ day: "Monday" }),
     
-  
   },
 };
